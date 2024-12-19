@@ -4,9 +4,31 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // simulating of long signals
   digitalWrite(13, HIGH);
-  delay(1000);
+  delay(900);
   digitalWrite(13, LOW);
-  delay(1000);
+  delay(500);
+  digitalWrite(13, HIGH);
+  delay(900);
+  digitalWrite(13, LOW);
+  delay(500);
+  digitalWrite(13, HIGH);
+  delay(900);
+  digitalWrite(13, LOW);
+  delay(500);
+
+  // simulating of short signals
+  digitalWrite(13, HIGH);
+  delay(300);
+  digitalWrite(13, LOW);
+  delay(500);
+  digitalWrite(13, HIGH);
+  delay(300);
+  digitalWrite(13, LOW);
+  delay(500);
+  digitalWrite(13, HIGH);
+  delay(300);
+  digitalWrite(13, LOW);
+  delay(500);
 }
