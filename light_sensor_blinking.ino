@@ -1,34 +1,31 @@
+const int pinRed = 10;
+const int pinYellow = 11;
+const int pinGreen = 12;
+
 void setup() {
-  // put your setup code here, to run once:
-  pinMode(13, OUTPUT);
+  pinMode(pinRed, OUTPUT);
+  pinMode(pinYellow, OUTPUT);
+  pinMode(pinGreen, OUTPUT);
 }
 
 void loop() {
-  // simulating of long signals
-  digitalWrite(13, HIGH);
-  delay(900);
-  digitalWrite(13, LOW);
-  delay(500);
-  digitalWrite(13, HIGH);
-  delay(900);
-  digitalWrite(13, LOW);
-  delay(500);
-  digitalWrite(13, HIGH);
-  delay(900);
-  digitalWrite(13, LOW);
-  delay(500);
+  digitalWrite(pinRed, HIGH);
+  digitalWrite(pinYellow, LOW);
+  digitalWrite(pinGreen, LOW);
+  delay(1500);
 
-  // simulating of short signals
-  digitalWrite(13, HIGH);
-  delay(300);
-  digitalWrite(13, LOW);
-  delay(500);
-  digitalWrite(13, HIGH);
-  delay(300);
-  digitalWrite(13, LOW);
-  delay(500);
-  digitalWrite(13, HIGH);
-  delay(300);
-  digitalWrite(13, LOW);
-  delay(500);
+  digitalWrite(pinRed, LOW);
+  digitalWrite(pinYellow, HIGH);
+  digitalWrite(pinGreen, LOW);
+  delay(1500);
+
+  digitalWrite(pinRed, LOW);
+  digitalWrite(pinYellow, LOW);
+  digitalWrite(pinGreen, HIGH);
+  delay(1500);
+
+  digitalWrite(pinRed, LOW);
+  digitalWrite(pinYellow, HIGH);
+  digitalWrite(pinGreen, LOW);
+  delay(1500);
 }
